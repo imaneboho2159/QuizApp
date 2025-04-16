@@ -1,34 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #c9286b;">
-    <div class="container">
-      <a class="navbar-brand" routerLink="/" style="font-family: 'Cursive', sans-serif;">Quiz App</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm rounded-bottom-4 py-3 px-4">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
   
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/quiz" routerLinkActive="active">Quiz</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/result" routerLinkActive="active">Result</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/history" routerLinkActive="active">History</a>
-          </li>
-        </ul>
+      <!-- Left: Logo + App Name -->
+      <div class="d-flex align-items-center">
+        <div class="d-flex justify-content-center align-items-center rounded-circle me-2 logo-icon">
+          <i class="bi bi-lightning-fill text-white"></i>
+        </div>
+        <span class="fs-5 fw-semibold text-dark">Quizz <span class="text-purple">Fun</span></span>
+      </div>
+  
+      <!-- Center: Navigation Links -->
+      <div class="d-flex gap-2">
+        <a routerLink="/" routerLinkActive="active" class="btn nav-btn">Home</a>
+        <a routerLink="/quiz" routerLinkActive="active" class="btn nav-btn">Quiz</a>
+        <a routerLink="/result" routerLinkActive="active" class="btn nav-btn">Result</a>
+        <a routerLink="/history" routerLinkActive="active" class="btn nav-btn">History</a>
+      </div>
+  
+      <!-- Right: Sign In + Contact Us -->
+      <div class="d-flex align-items-center gap-3">
+        <span class="text-muted small">Sign In</span>
+        <button class="btn contact-btn d-flex align-items-center gap-1">
+          Contact Us
+          <i class="bi bi-arrow-up-right-circle-fill"></i>
+        </button>
       </div>
     </div>
   </nav>
+  
+  
   

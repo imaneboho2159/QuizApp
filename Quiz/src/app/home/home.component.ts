@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  category: string = '9'; // Default category (General Knowledge)
-  difficulty: string = 'easy'; // Default difficulty
+  category: string = '9'; 
+  difficulty: string = 'easy'; 
 
   constructor(private router: Router) {}
 
   startQuiz() {
-    // Navigate to the quiz page with selected category and difficulty
+
     this.router.navigate(['/quiz'], {
       queryParams: { category: this.category, difficulty: this.difficulty }
     });

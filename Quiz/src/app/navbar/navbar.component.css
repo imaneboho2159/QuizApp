@@ -1,0 +1,42 @@
+/* Soft purple shade like WonderKids */
+.text-purple {
+    color: #7b61ff;
+  }
+  
+  /* Logo icon circle */
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #f9b800;
+    font-size: 1rem;
+  }
+  
+  /* Navigation pill buttons */
+  .nav-btn {
+    border: 1px solid #d6d6d6;
+    border-radius: 999px;
+    padding: 4px 16px;
+    color: #555;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .nav-btn:hover,
+  .nav-btn.active {
+    border: 1px solid #000;
+    font-weight: 600;
+    color: #000;
+  }
+  
+  /* Contact Us CTA */
+  .contact-btn {
+    border: 2px solid #b69cff;
+    color: #7b61ff;
+    border-radius: 999px;
+    padding: 4px 16px;
+    transition: 0.2s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #f1ebff;
+  }
+  
